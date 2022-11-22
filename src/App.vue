@@ -1,12 +1,12 @@
 <template>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-3">go</div>
         <div class="col-md-3">come</div>
         <div class="col-md-3">come</div>
         <div class="col-md-3">come</div>
     </div>
-</div>
+</div> -->
 <div class="container">
     <div v-if="show_country_details" class="row">
         <div class="col-12">
@@ -28,7 +28,7 @@
 
             <h1 class="text-center">{{title}}.</h1>
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 bg-danger">
+        <div class="col-sm-12 col-md-3 bg-success">
             <div v-if="countries.length > 0">
                 <div class="card mb-4" v-for="(items, i) in countries" :key="i">
                     <img :src="items.flags.png" class="card-img-top" alt="Country Flag">
